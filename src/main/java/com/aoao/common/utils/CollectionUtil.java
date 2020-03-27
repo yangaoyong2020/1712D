@@ -11,7 +11,17 @@ import java.util.Collection;
  */
 public class CollectionUtil {
 
-	public static boolean hasValue(Collection<?> collection){
-		return collection==null ||collection.isEmpty();
+	/**
+	 * 
+	 * @Title: isEmpty 
+	 * @Description: 判断集合是否有值。。。
+	 * @return
+	 * @return: boolean
+	 */
+	public static boolean isEmpty(Collection<?> collection) {
+		return collection==null || collection.isEmpty();
+		//return collection==null || collection.size()==0;
+		
 	}
+
 }
